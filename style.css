@@ -1,0 +1,91 @@
+/* Cấu hình chung cho toàn bộ trang */
+body {
+    font-family: 'Georgia', serif;  /* Phông chữ serif tạo cảm giác nhẹ nhàng, tinh tế */
+    background-color: #f7c8d3;  /* Nền hồng nhạt ấm áp */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #5b5b5b;  /* Màu chữ xám nhẹ cho cảm giác ấm áp */
+}
+
+/* Định dạng cho container */
+.container {
+    background-color: #ffffff;  /* Màu nền trắng nhẹ nhàng */
+    width: 80%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 15px;  /* Bo góc mềm mại */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);  /* Bóng mờ nhẹ để tạo cảm giác chiều sâu */
+    line-height: 1.8;
+    text-align: center;
+    border: 1px solid #f1d6a7;  /* Viền màu vàng nhạt để tạo sự ấm cúng */
+    background-image: url('https://images.unsplash.com/photo-1542070803-b9e660b7d6f9');  /* Hình nền nhẹ nhàng (có thể thay đổi link ảnh theo sở thích) */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Định dạng cho tiêu đề */
+h1 {
+    color: #b54d00;  /* Màu cam đậm, dễ chịu và ấm áp */
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;  /* Phông chữ thư pháp nhẹ nhàng */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);  /* Hiệu ứng bóng mờ nhẹ */
+}
+
+/* Định dạng cho đoạn văn */
+p {
+    font-size: 1.2em;
+    color: #5b5b5b;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 0 20px;
+    line-height: 1.7;
+}
+
+/* Định dạng cho đoạn văn cuối */
+p:last-of-type {
+    font-weight: bold;
+    color: #d85f1b;  /* Màu cam nhạt cho sự nhẹ nhàng và tình cảm */
+    font-size: 1.4em;
+}
+
+/* Hiệu ứng hover cho tiêu đề */
+h1:hover {
+    color: #ff8c00;  /* Màu vàng cam nhẹ khi hover */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Tạo hiệu ứng cho các đoạn văn */
+p {
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+/* Thêm hiệu ứng khi di chuột vào đoạn văn */
+p:hover {
+    transform: translateY(-5px);  /* Khi hover, văn bản sẽ nhẹ nhàng nâng lên */
+    color: #b54d00;  /* Thay đổi màu sắc nhẹ khi hover */
+}
+
+/* Thêm hiệu ứng trái tim nảy lên */
+.heart {
+    color: #ff69b4;  /* Màu hồng cho trái tim */
+    font-size: 2em;
+    animation: bounce 1s infinite;
+    display: inline-block;
+}
+
+/* Hiệu ứng "nảy" cho trái tim */
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
